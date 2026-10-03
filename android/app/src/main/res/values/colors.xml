@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="live_lens_navy">#1B263B</color>
+    <color name="live_lens_blue">#2E5EAA</color>
+    <color name="live_lens_background">#0F1115</color>
+    <color name="live_lens_on_background">#FFFFFF</color>
+</resources>

@@ -1,0 +1,203 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.livelens.games"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.CAMERA" />
+11-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:4:5-65
+11-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:4:22-62
+12    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+12-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:5:5-71
+12-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:5:22-68
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:6:5-67
+13-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:6:22-64
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:7:5-79
+14-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:7:22-76
+15    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+15-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:8:5-80
+15-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:8:22-77
+16
+17    <uses-feature
+17-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:10:5-84
+18        android:name="android.hardware.camera"
+18-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:10:19-57
+19        android:required="true" />
+19-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:10:58-81
+20    <uses-feature
+20-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:11:5-95
+21        android:name="android.hardware.camera.autofocus"
+21-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:11:19-67
+22        android:required="false" />
+22-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:11:68-92
+23    <uses-feature
+23-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:12:5-88
+24        android:name="android.hardware.microphone"
+24-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:12:19-61
+25        android:required="true" />
+25-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:12:62-85
+26
+27    <permission
+27-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:22:5-24:47
+28        android:name="com.livelens.games.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+28-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:23:9-81
+29        android:protectionLevel="signature" />
+29-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:24:9-44
+30
+31    <uses-permission android:name="com.livelens.games.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+31-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:26:5-97
+31-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:26:22-94
+32
+33    <application
+33-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:14:5-38:19
+34        android:allowBackup="true"
+34-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:15:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.13.1] C:\Users\Admin\.gradle\caches\transforms-4\8e0a0bff2d388b6446750efdf4a5758f\transformed\core-1.13.1\AndroidManifest.xml:28:18-86
+36        android:debuggable="true"
+37        android:extractNativeLibs="false"
+38        android:icon="@mipmap/ic_launcher"
+38-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:16:9-43
+39        android:label="@string/app_name"
+39-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:17:9-41
+40        android:roundIcon="@mipmap/ic_launcher"
+40-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:18:9-48
+41        android:supportsRtl="true"
+41-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:19:9-35
+42        android:testOnly="true"
+43        android:theme="@style/Theme.LiveLensGames"
+43-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:20:9-51
+44        android:usesCleartextTraffic="true" >
+44-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:21:9-44
+45
+46        <!--
+47          usesCleartextTraffic="true" is only here so the demo can hit a plain
+48          http://<lan-ip>:8000 backend while testing on a physical device during
+49          the hackathon. Remove this (and use https) for anything beyond local testing.
+50        -->
+51
+52        <activity
+52-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:28:9-37:20
+53            android:name="com.livelens.games.MainActivity"
+53-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:29:13-41
+54            android:exported="true"
+54-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:30:13-36
+55            android:screenOrientation="portrait"
+55-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:32:13-49
+56            android:theme="@style/Theme.LiveLensGames" >
+56-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:31:13-55
+57            <intent-filter>
+57-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:33:13-36:29
+58                <action android:name="android.intent.action.MAIN" />
+58-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:34:17-69
+58-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:34:25-66
+59
+60                <category android:name="android.intent.category.LAUNCHER" />
+60-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:35:17-77
+60-->D:\Madhuri_Imp\live-lens-games\android\app\src\main\AndroidManifest.xml:35:27-74
+61            </intent-filter>
+62        </activity>
+63
+64        <service
+64-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:24:9-33:19
+65            android:name="androidx.camera.core.impl.MetadataHolderService"
+65-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:25:13-75
+66            android:enabled="false"
+66-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:26:13-36
+67            android:exported="false" >
+67-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:27:13-37
+68            <meta-data
+68-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:30:13-32:89
+69                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+69-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:31:17-103
+70                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+70-->[androidx.camera:camera-camera2:1.3.4] C:\Users\Admin\.gradle\caches\transforms-4\40d3e7b14b154e25a43080dab422f582\transformed\camera-camera2-1.3.4\AndroidManifest.xml:32:17-86
+71        </service>
+72
+73        <activity
+73-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\c7ff3eb765e975bf618d909127b04946\transformed\ui-tooling-release\AndroidManifest.xml:23:9-25:39
+74            android:name="androidx.compose.ui.tooling.PreviewActivity"
+74-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\c7ff3eb765e975bf618d909127b04946\transformed\ui-tooling-release\AndroidManifest.xml:24:13-71
+75            android:exported="true" />
+75-->[androidx.compose.ui:ui-tooling-android:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\c7ff3eb765e975bf618d909127b04946\transformed\ui-tooling-release\AndroidManifest.xml:25:13-36
+76        <activity
+76-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\da6a90ca9d8038fac9c5ba0eb6d9e40e\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:23:9-25:39
+77            android:name="androidx.activity.ComponentActivity"
+77-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\da6a90ca9d8038fac9c5ba0eb6d9e40e\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:24:13-63
+78            android:exported="true" />
+78-->[androidx.compose.ui:ui-test-manifest:1.6.8] C:\Users\Admin\.gradle\caches\transforms-4\da6a90ca9d8038fac9c5ba0eb6d9e40e\transformed\ui-test-manifest-1.6.8\AndroidManifest.xml:25:13-36
+79
+80        <provider
+80-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+81            android:name="androidx.startup.InitializationProvider"
+81-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:25:13-67
+82            android:authorities="com.livelens.games.androidx-startup"
+82-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:26:13-68
+83            android:exported="false" >
+83-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:27:13-37
+84            <meta-data
+84-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+85                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+85-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:30:17-75
+86                android:value="androidx.startup" />
+86-->[androidx.emoji2:emoji2:1.3.0] C:\Users\Admin\.gradle\caches\transforms-4\192474c036ec43764acdf6f3e34ae042\transformed\emoji2-1.3.0\AndroidManifest.xml:31:17-49
+87            <meta-data
+87-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Admin\.gradle\caches\transforms-4\5b8ea465910fd80be9fa1407ed6ac524\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:29:13-31:52
+88                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+88-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Admin\.gradle\caches\transforms-4\5b8ea465910fd80be9fa1407ed6ac524\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:30:17-78
+89                android:value="androidx.startup" />
+89-->[androidx.lifecycle:lifecycle-process:2.8.4] C:\Users\Admin\.gradle\caches\transforms-4\5b8ea465910fd80be9fa1407ed6ac524\transformed\lifecycle-process-2.8.4\AndroidManifest.xml:31:17-49
+90            <meta-data
+90-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:29:13-31:52
+91                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+91-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:30:17-85
+92                android:value="androidx.startup" />
+92-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:31:17-49
+93        </provider>
+94
+95        <receiver
+95-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:34:9-52:20
+96            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+96-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:35:13-76
+97            android:directBootAware="false"
+97-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:36:13-44
+98            android:enabled="true"
+98-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:37:13-35
+99            android:exported="true"
+99-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:38:13-36
+100            android:permission="android.permission.DUMP" >
+100-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:39:13-57
+101            <intent-filter>
+101-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:40:13-42:29
+102                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:17-91
+102-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:41:25-88
+103            </intent-filter>
+104            <intent-filter>
+104-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:43:13-45:29
+105                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:17-85
+105-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:44:25-82
+106            </intent-filter>
+107            <intent-filter>
+107-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:46:13-48:29
+108                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:17-88
+108-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:47:25-85
+109            </intent-filter>
+110            <intent-filter>
+110-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:49:13-51:29
+111                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:17-95
+111-->[androidx.profileinstaller:profileinstaller:1.3.1] C:\Users\Admin\.gradle\caches\transforms-4\4e16cc280eaa0a1f5277c41379c36ea2\transformed\profileinstaller-1.3.1\AndroidManifest.xml:50:25-92
+112            </intent-filter>
+113        </receiver>
+114    </application>
+115
+116</manifest>
