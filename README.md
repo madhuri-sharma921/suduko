@@ -1,4 +1,4 @@
-# Live Lens — Games
+# Suduko
 
 A camera-aware Voice AI demo: point your phone at a paper board game, talk
 to a live voice agent about it. Two games, one Android app, one FastAPI
@@ -15,13 +15,7 @@ Android app → /bootstrap → Agora RTC/RTM tokens → live voice session
 independently re-read into a full 4×4 grid and injected as context. Simple
 and self-correcting: a bad frame just gets overwritten by the next good one.
 
-**Dots & Boxes** — turn-based incremental state doesn't work the same way.
-Re-reading the *whole* board every frame gets more error-prone as more lines
-accumulate. So the backend is **server-authoritative**: it owns the
-line-set, whose turn it is, and box ownership. Vision is only asked "what
-lines do you see," and the backend **diffs** against what it already knows —
-applying a move only when *exactly one* new line is found. Ambiguous frames
-are rejected with a "try again" message instead of guessed.
+
 
 ## Repo layout
 
@@ -43,8 +37,6 @@ android/                       # Full Gradle project — open this folder in And
           CameraPreview.kt       # CameraX preview + frame capture wiring
         sudoku/
           SudokuOverlay.kt       # 4x4 grid readout drawn over camera preview
-        dotsboxes/
-          DotsAndBoxesOverlay.kt # status text + "confirm move" button
       res/                       # strings, theme, launcher icon
   build.gradle.kts
   settings.gradle.kts
@@ -56,7 +48,7 @@ backend/
     vision_client.py        # shared Gemini Vision wrapper (JSON-only responses)
     games/
       sudoku.py             # board model, conflict detection, hint solver
-      dots_and_boxes.py     # server-authoritative state machine + line diffing
+    
   requirements.txt
 ```
 
@@ -77,9 +69,7 @@ Interactive API docs: `http://localhost:8000/docs`
 |---|---|
 | `POST /game/sudoku/analyze` | Read a frame into a 4×4 board, no side effects |
 | `POST /game/sudoku/inject` | Analyze + push context into the live agent (call on your frame timer) |
-| `POST /game/dots-boxes/analyze` | Raw line-reading only, no state mutation |
-| `POST /game/dots-boxes/move` | Analyze, diff against known state, apply if exactly one new line, inject context |
-| `POST /game/dots-boxes/reset` | Fresh game for a session |
+
 
 You still need to add your own `/bootstrap` endpoint (Agora App ID +
 short-lived RTC/RTM token issuance) to `main.py` — that part is specific to
@@ -111,9 +101,7 @@ publish, or the Conversational AI context-update REST call).
 ## Suggested demo script
 
 - **Sudoku**: "Where should I play next?" → agent reads the grid, gives row/col + digit with reasoning.
-- **Dots & Boxes**: draw a line → tap "I drew a line" (or say it, if RTM intent
-  detection is wired) → agent confirms the move, announces if a box was completed,
-  and says whose turn it is next.
+
 
 ## Suggested Gemini prompt additions for the live agent's system prompt
 
@@ -122,7 +110,4 @@ When game_mode = "sudoku": you are a Sudoku assistant. The board context
 you receive is a full re-read of the grid, not a diff — trust the latest
 one completely. Never invent cell values not present in the context.
 
-When game_mode = "dots_and_boxes": you are a Dots & Boxes opponent/narrator.
-Turn state is authoritative — always check whose turn it is before
-responding as if it's the player's move.
 ```
